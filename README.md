@@ -10,8 +10,8 @@ Each release includes:
 Make it the service's entrypoint, ahead of the app's own command:
 
 ```dockerfile
-ADD --chmod=755 --checksum=sha256:a7313e301fc7f4e7889575ed88738c3d0d3b4f7d3ca52817a4f40d15c122a862 \
-  https://github.com/mrq-vibes/lane2-exec-releases/releases/download/v1.0.1/lane2-exec-linux-amd64 \
+ADD --chmod=755 --checksum=sha256:670605d67c4e4f0cf37144ac62d37f529a74187485d75d911293b539717d4b3d \
+  https://github.com/mrq-vibes/lane2-exec-releases/releases/download/v1.0.2/lane2-exec-linux-amd64 \
   /usr/local/bin/lane2-exec
 ENTRYPOINT ["lane2-exec", "--"]
 CMD ["node", "server.js"]
